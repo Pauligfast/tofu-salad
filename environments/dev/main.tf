@@ -17,6 +17,7 @@ module "subnets" {
 
 module "ec2" {
   source = "../../modules/ec2"
-  public_subnet_id = module.subnets.public_subnet_id
+  public_subnet_ids = module.subnets.public_subnet_ids
   security_group_id = module.vpc.security_group_id  
+  vpc_id = module.vpc.vpc_id
 }

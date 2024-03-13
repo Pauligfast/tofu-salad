@@ -1,5 +1,11 @@
-variable "public_subnet_id" {
-   description = "ID of the public subnet for EC2 instance"
+
+
+variable "public_subnet_ids" {
+   description = "IDs of the public subnets for EC2 instance"
+}
+
+variable "vpc_id" {
+   description = "ID of the public subnet vpc"
 }
 
 variable "security_group_id" {
